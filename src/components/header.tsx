@@ -2,11 +2,11 @@ import * as React from "react";
 import styled from "../theme";
 import Logo from './logo';
 import TopBarCtaBox from './top-bar-cta-box';
-interface SectionProps {
+interface HeaderProps {
   className?: string;
 }
 
-class Header extends React.Component<SectionProps, {}> {
+class Header extends React.Component<HeaderProps, {}> {
   render() {
     return <div className={this.props.className}>
       <Logo />

@@ -2,11 +2,11 @@ import * as React from "react";
 import styled from "../theme";
 import Button from './button'
 
-interface SectionProps {
+interface TopBarCtaBoxProps {
   className?: string;
 }
 
-class TopBarCtaBox extends React.Component<SectionProps, {}> {
+class TopBarCtaBox extends React.Component<TopBarCtaBoxProps, {}> {
   render() {
     return <div className={this.props.className}>
         <Button text="S’identifier" callback={()=>{}}/>

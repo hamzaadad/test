@@ -1,11 +1,11 @@
 import * as React from "react";
 import styled from "../theme";
 import logo from './imgs/logo.png';
-interface SectionProps {
+interface LogoProps {
   className?: string;
 }
 
-class Logo extends React.Component<SectionProps, {}> {
+class Logo extends React.Component<LogoProps, {}> {
   render() {
     return <img  className={this.props.className} src={logo} />;
   }

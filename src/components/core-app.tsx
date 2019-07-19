@@ -1,11 +1,11 @@
 import * as React from "react";
 import styled from "../theme";
 import LoginBox from './login-box';
-interface SectionProps {
+interface CoreAppProps {
   className?: string;
 }
 
-class CoreApp extends React.Component<SectionProps, {}> {
+class CoreApp extends React.Component<CoreAppProps, {}> {
   render() {
     return <div className={this.props.className}>
       <LoginBox />
