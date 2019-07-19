@@ -254,7 +254,7 @@ const StyledSection = styled(LoginBox)`
   .devider{
     height: 1px;
     width: 60px;
-    background: rgba(211, 211, 211, 1);
+    background: ${({theme}) => theme.grayColor};
   }
 
   .info-section{

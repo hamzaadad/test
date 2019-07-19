@@ -12,9 +12,9 @@ class Logo extends React.Component<SectionProps, {}> {
 }
 
 const StyledSection = styled(Logo)`
-  height: 29px;
-  width: 144px;
-  margin-left: 100px
+  height: ${({theme})=> theme.logoHieght};
+  width: ${({theme})=> theme.logoWidth};
+  margin-left: ${({theme})=> theme.marginLeftLogo};
 `;
 
 export default StyledSection;

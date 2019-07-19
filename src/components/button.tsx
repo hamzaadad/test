@@ -20,16 +20,16 @@ const StyledSection = styled(Button)`
   cursor: pointer;
   color: ${props => props.theme.textColor};
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: ${({theme})=> theme.buttonFontSize};
   font-weight: 600;
   display:flex;
   align-items: center;
-  padding: 20px;
+  padding: ${({theme})=>theme.buttonPadding};
   transition: all ease .2s;
-  ${({ bordred }) => bordred && `
-    padding: 18px 40px;
-    background: rgba(233, 29, 61, 0.05);
-    border: 1px solid #E91D3D;
+  ${(props) => props.bordred && `
+    padding: ${props.theme.buttonActivePadding};
+    background: ${props.theme.buttonActiveBg};
+    border: ${props.theme.buttonAtviceBorder};
     border-radius: 33px;
     &:hover{
       background: #E91D3D;

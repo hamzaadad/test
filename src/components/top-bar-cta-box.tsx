@@ -21,7 +21,7 @@ const StyledSection = styled(TopBarCtaBox)`
   display:flex;
   align-items: center;
   margin-left: auto;
-  margin-right: 108px;
+  margin-right: ${({theme})=> theme.merginRighCta}; 
 `;
 
 export default StyledSection;
