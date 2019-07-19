@@ -16,6 +16,8 @@ const StyledSection = styled(Section)`
   width: 100vw;
   height: 100vh;
   background: ${props => props.theme.mainBackgroundColor};
+  display:flex;
+  flex-direction: column;
 `;
 
 export default StyledSection;

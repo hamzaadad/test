@@ -5,6 +5,7 @@ import { injectGlobal, ThemeProvider, theme } from "./theme";
 
 import Section from "./components/section";
 import Header from "./components/header";
+import CoreApp from "./components/core-app";
 /*import Quote from "./components/quote";
 import QuoteAuthor from "./components/quote-author";*/
 
@@ -22,6 +23,7 @@ class MainWrapper extends React.Component<MainWrapperProps, {}> {
     return (
       <Section>
         <Header/>
+        <CoreApp />
       </Section>
     );
   }

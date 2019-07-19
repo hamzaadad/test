@@ -1,14 +1,16 @@
 import * as React from "react";
 import styled from "../theme";
-interface SectionProps {
+interface ButtonProps {
   className?: string;
   text?: string;
   bordred?: boolean;
+  style?: object;
+  callback: ()=>any;
 }
 
-class Button extends React.Component<SectionProps, {}> {
+class Button extends React.Component<ButtonProps, {}> {
   render() {
-    return <div className={this.props.className}>
+    return <div className={this.props.className} style={this.props.style} onClick={()=>{ this.props.callback(); }}>
       {this.props.text}
     </div>;
   }

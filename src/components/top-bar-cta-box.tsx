@@ -9,8 +9,8 @@ interface SectionProps {
 class TopBarCtaBox extends React.Component<SectionProps, {}> {
   render() {
     return <div className={this.props.className}>
-        <Button text="S’identifier" />
-        <Button text="S’inscrire" bordred={true} />
+        <Button text="S’identifier" callback={()=>{}}/>
+        <Button text="S’inscrire" bordred={true} callback={()=>{}} />
       {/* <Button text="S’identifier" />
       <Button text="S’inscrire" type="bordred" /> */}
     </div>;
