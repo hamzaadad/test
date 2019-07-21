@@ -36,7 +36,7 @@ class LoginBox extends React.Component<LoginBoxProps, State> {
         userData: null,
     };
 
-    randomSentensGenerator(): String{
+    randomSentensGenerator(): string{
         let verbs, nouns, adjectives, adverbs, preposition;
             nouns = ["bird", "clock", "boy", "plastic", "duck", "teacher", "old lady", "professor", "hamster", "dog"];
             verbs = ["kicked", "ran", "flew", "dodged", "sliced", "rolled", "died", "breathed", "slept", "killed"];
