@@ -3,7 +3,7 @@ This project was build with react-script but edited for the sake of simplicity
         React
         styled-components (ThemedStyledComponentsModule)
 
-Happy ready;
+Happy reading;
 
 i could've used to main component from login and profil but i made a login-box that has both states for the sake of animation.
 i also started adding theming but was too lazy to complete the whole theme.
